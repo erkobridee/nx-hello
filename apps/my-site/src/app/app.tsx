@@ -3,19 +3,20 @@ import * as React from 'react';
 import './app.scss';
 
 import { ReactComponent as Logo } from './logo.svg';
-import star from './star.svg';
+// import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
 
 import { PageTitle } from '@nx-hello/ui-header';
+import { ApiResponse, API_URL } from '@nx-hello/api-interface';
 
 export const App = () => {
-  const [apiResponse, setApiResponse] = React.useState({
+  const [apiResponse, setApiResponse] = React.useState<ApiResponse>({
     message: 'Loading...'
   });
 
   React.useEffect(() => {
-    fetch('/api')
+    fetch(API_URL)
       .then(response => response.json())
       .then(setApiResponse);
   }, []);

@@ -122,3 +122,11 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 10. creating an api project that allows the access of frontend app my-site
 
 `nx g @nrwl/express:app api --frontendProject=my-site`
+
+11. create an api-interface library to share the typescript interfaces
+
+`nx g @nrwl/workspace:lib api-interface`
+
+12. check the dependencies graph
+
+`nx dep-graph`
