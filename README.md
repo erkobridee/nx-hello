@@ -80,3 +80,7 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 - [Nx Workspaces (by Nrwl) | Nx Playbook](https://nxplaybook.com/p/nx-workspaces) - Introduction to Using an Nx Monorepo - free course
 
 - Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+## Steps
+
+1. creation command: `npx create-nx-workspace nx-hello`
