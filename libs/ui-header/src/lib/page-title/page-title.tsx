@@ -8,7 +8,7 @@ export interface PageTitleProps {}
 export const PageTitle = (props: PageTitleProps) => {
   return (
     <div>
-      <h1>Welcome to page-title component!</h1>
+      <h1>Welcome to my-site!</h1>
     </div>
   );
 };

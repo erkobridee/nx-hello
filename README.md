@@ -130,3 +130,11 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 12. check the dependencies graph
 
 `nx dep-graph`
+
+13. update the API_URL on the api-interface library and check
+
+`nx affected:dep-graph`
+
+14. run the unit tests against all the affected code
+
+`nx affected:test`
