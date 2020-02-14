@@ -83,4 +83,10 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 ## Steps
 
-1. creation command: `npx create-nx-workspace nx-hello`
+1. creation command:
+
+`npx create-nx-workspace nx-hello`
+
+2. add the react dev dependency to the nx workspace:
+
+`npm i --save-dev @nrwl/react`
