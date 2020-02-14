@@ -98,3 +98,7 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 4. running the created (my-site) application:
 
 `nx serve my-site`
+
+5. creating a reusable ui-header components library:
+
+`nx g @nrwl/react:lib ui-header`

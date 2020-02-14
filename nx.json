@@ -17,6 +17,9 @@
     "my-site-e2e": {
       "tags": [],
       "implicitDependencies": ["my-site"]
+    },
+    "ui-header": {
+      "tags": []
     }
   }
 }
