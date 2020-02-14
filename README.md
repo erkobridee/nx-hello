@@ -114,3 +114,11 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 8. add the nx express plugin
 
 `npm i --save-dev @nrwl/express`
+
+9. list the express plugin app creation options
+
+`nx g @nrwl/express:app --help`
+
+10. creating an api project that allows the access of frontend app my-site
+
+`nx g @nrwl/express:app api --frontendProject=my-site`
