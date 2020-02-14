@@ -110,3 +110,7 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 7. check the dependencies graph
 
 `nx dep-graph`
+
+8. add the nx express plugin
+
+`npm i --save-dev @nrwl/express`
