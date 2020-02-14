@@ -102,3 +102,11 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 5. creating a reusable ui-header components library:
 
 `nx g @nrwl/react:lib ui-header`
+
+6. creating a component inside of the ui_header components library:
+
+`nx g @nrwl/react:component --project=ui-header page-title`
+
+7. check the dependencies graph
+
+`nx dep-graph`

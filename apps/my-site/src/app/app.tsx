@@ -7,6 +7,8 @@ import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
 
+import { PageTitle } from '@nx-hello/ui-header';
+
 export const App = () => {
   /*
    * Replace the elements below with your own.
@@ -17,6 +19,7 @@ export const App = () => {
     <div className="app">
       <header className="flex">
         <Logo width="75" height="75" />
+        <PageTitle />
         <h1>Welcome to my-site!</h1>
       </header>
       <main>
