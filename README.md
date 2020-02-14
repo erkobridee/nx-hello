@@ -90,3 +90,11 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 2. add the react dev dependency to the nx workspace:
 
 `npm i --save-dev @nrwl/react`
+
+3. create the first application (react, named as my-site) inside of the nx workspace:
+
+`nx generate @nrwl/react:app`
+
+4. running the created (my-site) application:
+
+`nx serve my-site`
