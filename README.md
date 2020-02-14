@@ -73,4 +73,10 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 ## Further help
 
-Visit the [Nx Documentation](https://nx.dev) to learn more.
+- [[YouTube] Nx: Extensible Dev Tools for Monorepos (React)](https://www.youtube.com/watch?v=E188J7E_MDU)
+
+- [[YouTube playlist] Nx Workspaces Course (Free version) - By Nrwl](https://www.youtube.com/watch?v=2mYLe9Kp9VM&list=PLakNactNC1dH38AfqmwabvOszDmKriGco)
+
+- [Nx Workspaces (by Nrwl) | Nx Playbook](https://nxplaybook.com/p/nx-workspaces) - Introduction to Using an Nx Monorepo - free course
+
+- Visit the [Nx Documentation](https://nx.dev) to learn more.
