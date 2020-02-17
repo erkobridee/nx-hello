@@ -81,6 +81,12 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 - Visit the [Nx Documentation](https://nx.dev) to learn more.
 
+---
+
+- [[YouTube] Nx - Extensible Dev Tools for Monorepos (React Apps)](https://www.youtube.com/watch?v=Jxh_--FeJeY)
+
+---
+
 - Nx Console
 
   - [[GitHub] nrwl/nx-console](https://github.com/nrwl/nx-console)
