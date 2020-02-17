@@ -81,9 +81,15 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 - Visit the [Nx Documentation](https://nx.dev) to learn more.
 
+- [[GitHub] nrwl/nx-examples](https://github.com/nrwl/nx-examples)
+
 ---
 
+- [[YouTube] Nx Quickstart - How to Scale a JavaScript Project](https://www.youtube.com/watch?v=VUyBY72mwrQ)
+
 - [[YouTube] Nx - Extensible Dev Tools for Monorepos (React Apps)](https://www.youtube.com/watch?v=Jxh_--FeJeY)
+
+- [[YouTube] Nx Storybook Integration: Demo by Isaac Mann of Nrwl](https://www.youtube.com/watch?v=sFpqyjT7u4s)
 
 ---
 
