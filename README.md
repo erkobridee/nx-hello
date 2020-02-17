@@ -81,6 +81,12 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 - Visit the [Nx Documentation](https://nx.dev) to learn more.
 
+- Nx Console
+
+  - [[GitHub] nrwl/nx-console](https://github.com/nrwl/nx-console)
+
+  - [VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console)
+
 ## Steps
 
 1. creation command:
