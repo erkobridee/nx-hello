@@ -156,3 +156,15 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 14. run the unit tests against all the affected code
 
 `nx affected:test`
+
+## Findings
+
+- the projects are expected to use the TypeScript language
+  the shared code from the application, they're placed on the libs directory
+
+- the applications, they're placed on the apps directory
+  it offers support to have a node.js application, that could be used as the API
+
+- it's possible to have libs as Web Components, React stuff, Angular Stuff, or plain TypeScript code
+
+- it's possible to have frontend apps using Angular, React and I guess it's also possible to have using Vue.js
