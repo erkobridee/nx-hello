@@ -30,7 +30,7 @@ This project was generated using [Nx](https://nx.dev).
 
 - it's possible to deploy a react lib to the NPM ([Publishing React Libraries Made Easy | Nrwl](https://blog.nrwl.io/publishing-react-libraries-made-easy-d5b3d013deba))
 
-- [Storybook support](https://nx.dev/react/guides/modernize-storybook-react)
+- [Storybook](https://storybook.js.org/) - [Nx support](https://nx.dev/react/guides/modernize-storybook-react)
 
   - [Storybook support, run-many command, UI improvements, and more in Nx 8.8 | Nrwl](https://blog.nrwl.io/storybook-support-run-many-command-ui-improvements-and-more-in-nx-8-8-90575cb5dda4)
 
