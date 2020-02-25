@@ -41,8 +41,6 @@ Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
-Libraries are sharable across libraries and applications. They can be imported from `@nx-hello/mylib`.
-
 ## Development server
 
 Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
@@ -81,7 +79,11 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 - Visit the [Nx Documentation](https://nx.dev) to learn more.
 
-- [[GitHub] nrwl/nx-examples](https://github.com/nrwl/nx-examples)
+  - [CLI commands to a React project with Nx](https://nx.dev/react/api/home)
+
+  - [Using Nx at Enterprises](https://nx.dev/react/guides/monorepo-nx-enterprise)
+
+  - [Rebuilding and Retesting What is Affected](https://nx.dev/react/guides/monorepo-affected)
 
 ---
 
@@ -98,3 +100,11 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
   - [[GitHub] nrwl/nx-console](https://github.com/nrwl/nx-console)
 
   - [VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console)
+
+## Project examples
+
+- [[GitHub] nrwl/nx-examples](https://github.com/nrwl/nx-examples)
+
+- [[GitHub] nrwl/board-game-hoard](https://github.com/nrwl/board-game-hoard)
+
+- [[GitHub] nrwl/nx-azure-build](https://github.com/nrwl/nx-azure-build) - Example of setting up distributed Azure build for Nx workspace
