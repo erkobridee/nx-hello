@@ -109,10 +109,6 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 ## Project examples
 
-- [[GitHub] erkobridee / nx-hello](https://github.com/erkobridee/nx-hello)
-
-- [[GitHub] erkobridee / nx-todos](https://github.com/erkobridee/nx-todos)
-
 - [[GitHub] nrwl/nx-examples](https://github.com/nrwl/nx-examples)
 
 - [[GitHub] nrwl/board-game-hoard](https://github.com/nrwl/board-game-hoard)
