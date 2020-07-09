@@ -61,7 +61,7 @@ Run `nx affected:test` to execute the unit tests affected by a change.
 
 ## Running end-to-end tests
 
-Run `ng e2e my-app-e2e` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
+Run `nx e2e my-app-e2e` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
 
 Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 
@@ -90,6 +90,10 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
   - [Using Nx at Enterprises](https://nx.dev/react/guides/monorepo-nx-enterprise)
 
   - [Rebuilding and Retesting What is Affected](https://nx.dev/react/guides/monorepo-affected)
+
+  - [Updating Nx](https://nx.dev/react/workspace/update)
+
+    - remember to the nx version above 9.5, remove the tslint and update the missing dependencies to run the eslint correctly
 
 ---
 
