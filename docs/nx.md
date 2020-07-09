@@ -91,6 +91,8 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
   - [Rebuilding and Retesting What is Affected](https://nx.dev/react/guides/monorepo-affected)
 
+  - [Updating Nx](https://nx.dev/react/workspace/update)
+
 ---
 
 - [[YouTube] Nx Quickstart - How to Scale a JavaScript Project](https://www.youtube.com/watch?v=VUyBY72mwrQ)
