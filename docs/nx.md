@@ -71,6 +71,8 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 ## Further help
 
+- [Why you should switch from Lerna to Nx | Nrwl](https://blog.nrwl.io/why-you-should-switch-from-lerna-to-nx-463bcaf6821)
+
 - [How to develop React apps like Facebook, Microsoft, and Google | Nrwl](https://blog.nrwl.io/how-to-develop-react-apps-like-facebook-microsoft-and-google-bdcafcfbc9be)
 
 - [React Microfrontends and Monorepos: A Perfect Match | Nrwl](https://blog.nrwl.io/monorepos-and-react-microfrontends-a-perfect-match-d49dca64489a)
