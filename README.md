@@ -50,6 +50,10 @@ This project was generated using [Nx](https://nx.dev).
 
 - [React Microfrontends and Monorepos: A Perfect Match | Nrwl](https://blog.nrwl.io/monorepos-and-react-microfrontends-a-perfect-match-d49dca64489a) - [demo](https://nrwl-nx-examples-cart.netlify.com/cart) | [code](https://github.com/nrwl/nx-examples)
 
+- Running the frontend and backend together, based on the following [tweet](https://twitter.com/juristr/status/1290398409283850243)
+
+  - `nx run-many --target=serve --projects=my-site,api --parallel=true`
+
 ## Known issues on MacOS
 
 - [How to fix the Node gyp Error: No Xcode or CLT version detected | Reactgo](https://reactgo.com/gyp-xcode-or-clt-version-detected/)
