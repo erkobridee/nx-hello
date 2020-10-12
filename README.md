@@ -36,6 +36,8 @@ This project was generated using [Nx](https://nx.dev).
 
   - [Nx 8.8: Now You Can Write UI Tests with Storybook and Cypress | Nrwl](https://blog.nrwl.io/ui-testing-with-storybook-and-nx-4b86975224c)
 
+  - [VS Code Jest, Improved ESLint Support, Typescript 4, Storybook 6, and more with Nx 10.3 | Nx Blog](https://blog.nrwl.io/vs-code-jest-improved-eslint-support-typescript-4-storybook-6-and-more-with-nx-10-3-faf7c12fe556)
+
 - [Support for generic task execution, displaying affecting projects, new commands for schematics discovery, and more in Nx 8.7 | Nrwl](https://blog.nrwl.io/support-for-generic-task-execution-displaying-affecting-libraries-new-commands-for-schematics-1b62b444ad0e)
 
   - [[GitHub] nrwl/nx-azure-build](https://github.com/nrwl/nx-azure-build) - Example of setting up distributed Azure build for Nx workspace
@@ -57,3 +59,5 @@ This project was generated using [Nx](https://nx.dev).
 ## Known issues on MacOS
 
 - [How to fix the Node gyp Error: No Xcode or CLT version detected | Reactgo](https://reactgo.com/gyp-xcode-or-clt-version-detected/)
+
+  - in case when the CLI doesn't work to install the xcode cli tools, you can download it directly from the [Apple Developer site](https://developer.apple.com/download/more/) (Command Line Tools for Xcode)
