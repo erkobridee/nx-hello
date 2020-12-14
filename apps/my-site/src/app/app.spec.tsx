@@ -1,5 +1,9 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+/*
+  act
+  https://testing-library.com/docs/react-testing-library/example-intro#act
+*/
+import { render, waitFor } from '@testing-library/react';
 
 import { BrowserRouter } from 'react-router-dom';
 
@@ -7,7 +11,7 @@ import { BrowserRouter } from 'react-router-dom';
 // https://github.com/skidding/react-mock/tree/master/packages/fetch
 import { FetchMock } from '@react-mock/fetch';
 
-import { ApiResponse, API_URL } from '@nx-hello/api-interface';
+import { /*ApiResponse,*/ API_URL } from '@nx-hello/api-interface';
 
 import App from './app';
 
@@ -23,15 +27,15 @@ const renderComponent = () =>
   );
 
 describe('App', () => {
-  it('should render successfully', () => {
+  it('should render successfully', async () => {
     const { baseElement } = renderComponent();
 
-    expect(baseElement).toBeTruthy();
+    await waitFor(() => expect(baseElement).toBeTruthy());
   });
 
-  it('should have a greeting as the title', () => {
+  it('should have a greeting as the title', async () => {
     const { getByText } = renderComponent();
 
-    expect(getByText('Welcome to my-site!')).toBeTruthy();
+    await waitFor(() => expect(getByText('Welcome to my-site!')).toBeTruthy());
   });
 });

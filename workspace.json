@@ -47,7 +47,8 @@
                 }
               ]
             }
-          }
+          },
+          "outputs": ["{options.outputPath}"]
         },
         "serve": {
           "builder": "@nrwl/web:dev-server",
@@ -69,8 +70,6 @@
               "apps/my-site/**/*.jsx",
               "apps/my-site/**/*.ts",
               "apps/my-site/**/*.tsx",
-              "node_modules/@nrwl/react/typings/cssmodule.d.ts",
-              "node_modules/@nrwl/react/typings/image.d.ts",
               "apps/my-site/**/*.spec.ts",
               "apps/my-site/**/*.spec.tsx",
               "apps/my-site/**/*.spec.js",
@@ -84,7 +83,8 @@
           "options": {
             "jestConfig": "apps/my-site/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": ["coverage/apps/my-site"]
         }
       }
     },
@@ -131,8 +131,6 @@
               "libs/ui-header/**/*.jsx",
               "libs/ui-header/**/*.ts",
               "libs/ui-header/**/*.tsx",
-              "node_modules/@nrwl/react/typings/cssmodule.d.ts",
-              "node_modules/@nrwl/react/typings/image.d.ts",
               "libs/ui-header/**/*.spec.ts",
               "libs/ui-header/**/*.spec.tsx",
               "libs/ui-header/**/*.spec.js",
@@ -146,7 +144,8 @@
           "options": {
             "jestConfig": "libs/ui-header/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": ["coverage/libs/ui-header"]
         }
       }
     },
@@ -178,7 +177,8 @@
                 }
               ]
             }
-          }
+          },
+          "outputs": ["{options.outputPath}"]
         },
         "serve": {
           "builder": "@nrwl/node:execute",
@@ -201,7 +201,8 @@
           "options": {
             "jestConfig": "apps/api/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": ["coverage/apps/api"]
         }
       }
     },
@@ -229,7 +230,8 @@
           "options": {
             "jestConfig": "libs/api-interface/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": ["coverage/libs/api-interface"]
         }
       }
     }
