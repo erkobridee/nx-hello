@@ -6,6 +6,10 @@
 
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
 
+- [Introducing Nx 12: Simplified onboarding to Nx, Performance Improvements, Multi-Language support, and more! | Nrwl Blog](https://blog.nrwl.io/introducing-nx-12-simplified-onboarding-to-nx-performance-improvements-multi-language-support-6c344461eb13) - 2021/04/08
+
+- [Nx Private Cloud is Available! | Nrwl Blog](https://blog.nrwl.io/nx-private-cloud-is-available-1cd2891c4561) - 2021/03/24
+
 ## Adding capabilities to your workspace
 
 Nx supports many plugins which add capabilities for developing different types of applications and different tools.
