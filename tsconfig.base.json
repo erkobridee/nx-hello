@@ -16,8 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-hello/ui-header": ["libs/ui-header/src/index.ts"],
-      "@nx-hello/api-interface": ["libs/api-interface/src/index.ts"]
+      "@nx-hello/api-interface": ["libs/api-interface/src/index.ts"],
+      "@nx-hello/ui-header": ["libs/ui-header/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

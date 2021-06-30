@@ -1,6 +1,92 @@
 {
   "version": 1,
   "projects": {
+    "api": {
+      "root": "apps/api",
+      "sourceRoot": "apps/api/src",
+      "projectType": "application",
+      "prefix": "api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/api",
+            "main": "apps/api/src/main.ts",
+            "tsConfig": "apps/api/tsconfig.app.json",
+            "assets": ["apps/api/src/assets"],
+            "buildLibsFromSource": true
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/api/src/environments/environment.ts",
+                  "with": "apps/api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          },
+          "outputs": ["{options.outputPath}"]
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/api/**/*.ts",
+              "apps/api/**/*.spec.ts",
+              "apps/api/**/*.d.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/api/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/apps/api"]
+        }
+      }
+    },
+    "api-interface": {
+      "root": "libs/api-interface",
+      "sourceRoot": "libs/api-interface/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/api-interface/**/*.ts",
+              "libs/api-interface/**/*.spec.ts",
+              "libs/api-interface/**/*.spec.tsx",
+              "libs/api-interface/**/*.spec.js",
+              "libs/api-interface/**/*.spec.jsx",
+              "libs/api-interface/**/*.d.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/api-interface/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/api-interface"]
+        }
+      }
+    },
     "my-site": {
       "root": "apps/my-site",
       "sourceRoot": "apps/my-site/src",
@@ -19,9 +105,7 @@
               "apps/my-site/src/favicon.ico",
               "apps/my-site/src/assets"
             ],
-            "styles": [
-              "apps/my-site/src/styles.scss"
-            ],
+            "styles": ["apps/my-site/src/styles.scss"],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack",
             "buildLibsFromSource": true
@@ -50,9 +134,7 @@
               ]
             }
           },
-          "outputs": [
-            "{options.outputPath}"
-          ]
+          "outputs": ["{options.outputPath}"]
         },
         "serve": {
           "builder": "@nrwl/web:dev-server",
@@ -88,9 +170,7 @@
             "jestConfig": "apps/my-site/jest.config.js",
             "passWithNoTests": true
           },
-          "outputs": [
-            "coverage/apps/my-site"
-          ]
+          "outputs": ["coverage/apps/my-site"]
         }
       }
     },
@@ -151,103 +231,7 @@
             "jestConfig": "libs/ui-header/jest.config.js",
             "passWithNoTests": true
           },
-          "outputs": [
-            "coverage/libs/ui-header"
-          ]
-        }
-      }
-    },
-    "api": {
-      "root": "apps/api",
-      "sourceRoot": "apps/api/src",
-      "projectType": "application",
-      "prefix": "api",
-      "schematics": {},
-      "architect": {
-        "build": {
-          "builder": "@nrwl/node:build",
-          "options": {
-            "outputPath": "dist/apps/api",
-            "main": "apps/api/src/main.ts",
-            "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": [
-              "apps/api/src/assets"
-            ],
-            "buildLibsFromSource": true
-          },
-          "configurations": {
-            "production": {
-              "optimization": true,
-              "extractLicenses": true,
-              "inspect": false,
-              "fileReplacements": [
-                {
-                  "replace": "apps/api/src/environments/environment.ts",
-                  "with": "apps/api/src/environments/environment.prod.ts"
-                }
-              ]
-            }
-          },
-          "outputs": [
-            "{options.outputPath}"
-          ]
-        },
-        "serve": {
-          "builder": "@nrwl/node:execute",
-          "options": {
-            "buildTarget": "api:build"
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/api/**/*.ts",
-              "apps/api/**/*.spec.ts",
-              "apps/api/**/*.d.ts"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "apps/api/jest.config.js",
-            "passWithNoTests": true
-          },
-          "outputs": [
-            "coverage/apps/api"
-          ]
-        }
-      }
-    },
-    "api-interface": {
-      "root": "libs/api-interface",
-      "sourceRoot": "libs/api-interface/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "libs/api-interface/**/*.ts",
-              "libs/api-interface/**/*.spec.ts",
-              "libs/api-interface/**/*.spec.tsx",
-              "libs/api-interface/**/*.spec.js",
-              "libs/api-interface/**/*.spec.jsx",
-              "libs/api-interface/**/*.d.ts"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/api-interface/jest.config.js",
-            "passWithNoTests": true
-          },
-          "outputs": [
-            "coverage/libs/api-interface"
-          ]
+          "outputs": ["coverage/libs/ui-header"]
         }
       }
     }
