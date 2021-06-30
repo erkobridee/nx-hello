@@ -12,6 +12,12 @@
     ".eslintrc.json": "*"
   },
   "projects": {
+    "api": {
+      "tags": []
+    },
+    "api-interface": {
+      "tags": []
+    },
     "my-site": {
       "tags": []
     },
@@ -20,12 +26,6 @@
       "implicitDependencies": ["my-site"]
     },
     "ui-header": {
-      "tags": []
-    },
-    "api": {
-      "tags": []
-    },
-    "api-interface": {
       "tags": []
     }
   },
@@ -39,5 +39,13 @@
   },
   "affected": {
     "defaultBase": "master"
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
   }
 }
