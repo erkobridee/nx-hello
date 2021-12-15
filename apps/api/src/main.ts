@@ -9,8 +9,8 @@ import { ApiResponse, API_URL } from '@nx-hello/api-interface';
 
 const app = express();
 
-app.get(API_URL, (req, res) => {
-  res.send({ message: 'Welcome to api!' } as ApiResponse);
+app.get(API_URL, (_, res) => {
+  res.send({ message: 'Welcome from api server!' } as ApiResponse);
 });
 
 const port = process.env.port || 3333;
