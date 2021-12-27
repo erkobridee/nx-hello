@@ -2,6 +2,10 @@
 
 This project was generated using [Nx](https://nx.dev) ([v13.4.1](https://github.com/nrwl/nx/releases/tag/13.4.1))
 
+- [Monorepos in your browser with StackBlitz and Nx | Nrwl Blog](https://blog.nrwl.io/monorepos-in-your-browser-with-stackblitz-and-nx-c0fdd635e4ed)
+
+  - [StackBlitz template for an Nx monorepo with React | stackblitz.com](https://stackblitz.com/github/nrwl/stackblitz-nx-react)
+
 ## Goal
 
 - first contact with the tool
