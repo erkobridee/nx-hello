@@ -1,6 +1,6 @@
 # NxHello
 
-This project was generated using [Nx](https://nx.dev) ([v13.3.4](https://github.com/nrwl/nx/releases/tag/13.3.4))
+This project was generated using [Nx](https://nx.dev) ([v13.4.1](https://github.com/nrwl/nx/releases/tag/13.4.1))
 
 ## Goal
 
