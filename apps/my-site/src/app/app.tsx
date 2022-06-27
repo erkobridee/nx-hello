@@ -5,19 +5,19 @@ import './app.scss';
 import { ReactComponent as Logo } from './logo.svg';
 // import star from './star.svg';
 
-import { Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import { PageTitle } from '@nx-hello/ui-header';
 import { ApiResponse, API_URL } from '@nx-hello/api-interface';
 
 export const App = () => {
   const [apiResponse, setApiResponse] = React.useState<ApiResponse>({
-    message: 'Loading...'
+    message: 'Loading...',
   });
 
   React.useEffect(() => {
     fetch(API_URL)
-      .then(response => response.json())
+      .then((response) => response.json())
       .then(setApiResponse);
   }, []);
 
@@ -53,25 +53,25 @@ export const App = () => {
           </li>
         </ul>
       </div>
-      <Route
-        path="/"
-        exact
-        render={() => (
-          <div>
-            This is the generated root route.{' '}
-            <Link to="/page-2">Click here for page 2.</Link>
-          </div>
-        )}
-      />
-      <Route
-        path="/page-2"
-        exact
-        render={() => (
-          <div>
-            <Link to="/">Click here to go back to root page.</Link>
-          </div>
-        )}
-      />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              This is the generated root route.{' '}
+              <Link to="/page-2">Click here for page 2.</Link>
+            </div>
+          }
+        />
+        <Route
+          path="/page-2"
+          element={
+            <div>
+              <Link to="/">Click here to go back to root page.</Link>
+            </div>
+          }
+        />
+      </Routes>
       {/* END: routes */}
     </div>
   );

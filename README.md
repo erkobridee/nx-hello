@@ -1,6 +1,6 @@
 # NxHello
 
-This project was generated using [Nx](https://nx.dev) ([v13.8.3](https://github.com/nrwl/nx/releases/tag/13.8.3))
+This project was generated using [Nx](https://nx.dev) ([v14.3.6](https://github.com/nrwl/nx/releases/tag/14.3.6))
 
 - [Monorepos in your browser with StackBlitz and Nx | Nrwl Blog](https://blog.nrwl.io/monorepos-in-your-browser-with-stackblitz-and-nx-c0fdd635e4ed)
 
